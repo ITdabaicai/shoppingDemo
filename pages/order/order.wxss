@@ -1,0 +1,111 @@
+/* pages/order/order.wxss */
+.orderstate{
+    background: #D73F36;
+    color:#fff;
+    font-size:36rpx;
+    height: 136rpx;
+    line-height: 136rpx;
+    padding-left:50rpx;
+}
+.orderfollow{
+  height:152rpx;
+  background: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+}
+.orderimg{
+  position: absolute;
+  top:50rpx;
+  left: 30rpx;
+}
+.state,.orderget{
+  position: absolute;
+  top:20rpx;
+  left: 100rpx;
+  font-size: 32rpx;
+}
+.ordertime,.orderadd{
+  position: absolute;
+  top:80rpx;
+  left: 100rpx;
+  font-size: 28rpx;
+  color:#999999;
+}
+.ordernum{
+  position: absolute;
+  top:20rpx;
+  right: 30rpx;
+  font-size: 28rpx;
+  color:#0D0E10;
+}
+.goodmsg{
+  height:224rpx;
+  background: #FCFCFC;
+  position: relative;
+}
+.goodimg{
+  position: absolute;
+  top:30rpx;
+  left: 30rpx;
+}
+.goodname{
+  position: absolute;
+  top:40rpx;
+  left: 230rpx;
+  font-size:28rpx;
+  color:#000000;
+}
+.goodtype{
+  position: absolute;
+  top:100rpx;
+  left: 230rpx;
+  font-size:22rpx;
+  color:#999999;
+}
+.goodnum{
+  position: absolute;
+  top:150rpx;
+  left: 230rpx;
+  font-size:24rpx;
+  color:#000000;
+}
+.goodprice{
+  position: absolute;
+  top:150rpx;
+  right: 30rpx;
+  font-size:28rpx;
+  color:#000000;
+}
+.topline{
+  height: 6rpx;
+}
+.paymsg{
+  background: #fff;
+  height: 88rpx;
+  position: relative;
+}
+.payleft{
+  position: absolute;
+  color:#0D0E10;
+  top:20rpx;
+  left: 40rpx;
+  font-size:28rpx;
+}
+.payright,.payprice{
+  position: absolute;
+  color:#999999;
+  top:20rpx;
+  right: 40rpx;
+  font-size:28rpx;
+}
+.payprice{
+  color:#000000;
+}
+.weui-form-preview__label,.weui-form-preview__value{
+  color:#999999;
+  font-size:24rpx;
+}
+.bottombtn{
+  top:50rpx;
+  margin-bottom:30rpx;
+}

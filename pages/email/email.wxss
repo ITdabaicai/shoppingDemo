@@ -1,0 +1,8 @@
+/* pages/email/email.wxss */
+.toptip{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color:#999999;
+  font-size:28rpx;
+}

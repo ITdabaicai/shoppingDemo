@@ -1,0 +1,103 @@
+/* pages/product/product.wxss */
+.top{
+  background: #ffffff;
+  height: 10%;
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+
+.left{
+   margin:10rpx 1% 0 4%;
+   width: 25%;
+   text-align: center;
+   font-size:26rpx;
+  }
+  .right{
+   position: fixed;
+   left: 30%;
+   top:30rpx;
+   width: 70%;
+  }
+.search{
+  width: 90%;
+  height: 60rpx;
+  background: #f2f2f2;
+  text-align: center;
+}
+.lunbo{
+  position: fixed;
+  top:110rpx;
+  height:270rpx;
+  width: 100%;
+  background: #ffffff; 
+
+}
+.leftswipt{
+  position: fixed;
+  top:380rpx;
+  width:30%;
+  height:92%;
+  overflow:auto;
+}
+.proitem{
+  height: 110rpx;
+  line-height: 110rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size:24rpx;
+  text-align: center;
+  padding: 0 10 0 5rpx;
+  background: #ffffff;
+  border-left: 10rpx solid #D73F36;
+}
+
+.proitemk{
+  height: 110rpx;
+  line-height: 110rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size:24rpx;
+  text-align: center;
+  padding: 0 10rpx 0 15rpx;
+}
+.rightswipt{
+  position: fixed;
+  top: 380rpx;
+  left: 30%;
+  background: #ffffff;
+  width:70%;
+  height: 92%;
+  overflow: auto;
+}
+.productindex{
+  height: 260rpx;
+  position: relative;
+}
+.proimg{
+  position: absolute;
+  top: 20rpx;
+  left: 40rpx;
+}
+.proname{
+  position: absolute;
+  top: 20rpx;
+  left: 200rpx;
+  font-size:24rpx;
+  width: 50%;
+}
+.promodel{
+  position: absolute;
+  top: 100rpx;
+  left: 200rpx;
+  font-size:24rpx;
+  color:#999999;
+}
+.searchimg{
+   position:absolute;
+   top:5rpx;
+   left: 20rpx;
+   z-index: 999
+}

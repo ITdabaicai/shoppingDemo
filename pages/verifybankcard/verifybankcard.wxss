@@ -1,0 +1,8 @@
+/* pages/verifybankcard/verifybankcard.wxss */
+.toptip{
+  color:#BCBCBC;
+  font-size:22rpx;
+  padding-left:40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

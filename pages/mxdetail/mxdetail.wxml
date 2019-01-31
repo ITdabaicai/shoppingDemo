@@ -1,0 +1,17 @@
+<!--pages/mxdetail/mxdetail.wxml-->
+
+
+<view class="weui-form-preview">
+    <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">入账金额</view>
+            <view class="weui-form-preview__value_in-hd" style='color:#D73F36;'>{item.money}</view>
+        </view>
+    </view>
+    <view class="weui-form-preview__bd">
+        <view wx:for='{{list}}' class="weui-form-preview__item">
+            <view class="weui-form-preview__label">{item.name}</view>
+            <view class="weui-form-preview__value">{item.detail}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/sinvite/sinvite.wxml-->
+<!-- <loading hidden="{{hidden}}">
+  加载中
+</loading> -->
+<block wx:if='{{total!=0}}'>
+<view wx:for='{{list}}'>
+  <view class='first' >
+      <view class='touxiang'>
+        <image src='{{item.portrait}}' style='height:90rpx;width:90rpx;'></image>
+      </view>
+      <view class='name'>{{item.nickname}}</view>
+      <view class='num'>{{item.description}}</view>
+      <view class='city'>城市:{{item.scity}}</view>
+      <view class='time'>{{item.sdate}}</view>
+      <view wx:if='{{index!=0}}' class='line'></view>
+  </view>
+</view> 
+</block>
+<block wx:else>
+    <view class='nolesson'>
+      <image src='../icon/invitation.png' style='width:260rpx;height:260rpx;'></image>
+    </view>
+    <view class='nolessontitle'>暂无邀请用户</view>
+</block>

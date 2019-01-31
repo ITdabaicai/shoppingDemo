@@ -1,0 +1,9 @@
+/* pages/feedback/feedback.wxss */
+.tip{
+  background: #fff;
+  padding-left:7%;
+  height: 104rpx;
+  line-height: 104rpx;
+  color:#333333;
+  font-size:34rpx;
+}

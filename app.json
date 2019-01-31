@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/myself/myself",
+    "pages/index/index",
+    "pages/gooddetail/gooddetail",
+    "pages/shoppingcart/shoppingcart",
+    
+    "pages/wallet/wallet", 
+    "pages/msorder/msorder",
+    "pages/ewm/ewm", 
+    "pages/addnew/addnew",
+    "pages/feedback/feedback",
+    "pages/discuss/discuss",
+    "pages/sinvite/sinvite",
+    "pages/add/add",
+    "pages/personmsg/personmsg",
+    "pages/order/order",
+    "pages/myord/myord",
+    "pages/mxdetail/mxdetail",
+    "pages/email/email",
+    "pages/changephone/changephone",
+    "pages/verifyphone/verifyphone",
+    "pages/phone/phone",
+    "pages/verifybankcard/verifybankcard",
+    "pages/verifyperson/verifyperson",
+    "pages/references/references",
+    "pages/mxlist/mxlist"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D73F36",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#b1b5c7",
+    "selectedColor": "#0b1856",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "pages/images/tabbar_home02.png",
+        "iconPath": "pages/images/tabbar_home01.png"
+      },
+      {
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "text": "购物车",
+        "selectedIconPath": "pages/images/tabbar_shoppingcart02.png",
+        "iconPath": "pages/images/tabbar_shoppingcart01.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "pages/images/tabbar_myself01.png",
+        "selectedIconPath": "pages/images/tabbar_myself02.png"
+      }
+    ]
+  }
+}

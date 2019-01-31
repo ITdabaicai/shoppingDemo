@@ -1,0 +1,21 @@
+/* pages/phone/phone.wxss */
+.toptip{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color:#999999;
+  font-size:28rpx;
+}
+.weui-cell{
+  padding:10rpx 30rpx;
+}
+.weui-vcode-btn{
+  background: #D73F36;
+  color:#fff;
+  font-size:24rpx;
+} 
+
+.getnum{
+  background: #D73F36;
+   color:#fff;
+}

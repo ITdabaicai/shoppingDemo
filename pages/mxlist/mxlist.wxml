@@ -1,0 +1,13 @@
+<!--pages/mxlist/mxlist.wxml-->
+<view class='topline'></view>
+<view wx:for='{{lsit}}' data-index='{{index}}' class='personBh' bindtap="click">
+    <view class='niconpersonmsg' >
+      {{item.name}}
+      <view  class='time' >{{item.time}}</view>
+    </view>   
+    <view class='money'>{{item.money}}</view>
+    <view class='niconpersonmsgenter'>
+      <image src='/pages/images/right02.png' style='width:18rpx;height:28rpx;'></image>
+    </view>
+  <view class='line'></view>
+</view>

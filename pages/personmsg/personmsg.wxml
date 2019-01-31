@@ -1,0 +1,18 @@
+<!--pages/personmsg/personmsg.wxml-->
+<view class='topline'></view>
+  <view wx:for='{{list}}' data-index='{{index}}' class='personBh' bindtap="click">
+    <view class='niconpersonmsg' >
+      {{item}}
+    </view> 
+    <view class='niconpersonmsgenter'>
+      <image src='/pages/images/right02.png' style='width:18rpx;height:28rpx;'></image>
+    </view>
+  <view class='line'></view>
+</view>
+<view class='topline'></view>
+ <view wx:if='{{hasget!=0}}' class='personBh' bindtap="click">
+    <view class='personmsg' >我的二维码</view> 
+    <view class='personmsgenter'>
+      <image src='/pages/images/right02.png' style='width:18rpx;height:28rpx;'></image>
+    </view>
+  </view>

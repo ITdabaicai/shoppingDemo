@@ -1,0 +1,148 @@
+/* pages/shoppingcart/shoppingcart.wxss */
+.noneadd{
+  margin:40rpx 0 50rpx;
+  text-align: center;
+}
+.noneaddtext{
+  font-size: 32rpx;
+  margin:20rpx;
+  color:#696969;
+}
+
+.goodcimg{
+  width:44rpx;
+  height:44rpx; 
+ vertical-align: text-bottom;
+}
+
+.goodmsg{
+  height:204rpx;
+  position: relative;
+}
+.goodimg{
+  position: absolute;
+  top:30rpx;
+  left: 30rpx;
+}
+.goodname{
+  position: absolute;
+  top:30rpx;
+  left: 230rpx;
+  font-size:24rpx;
+  color:#000000;
+}
+.goodtype{
+  position: absolute;
+  top:100rpx;
+  left: 230rpx;
+  font-size:22rpx;
+  color:#999999;
+}
+.goodprice{
+  position: absolute;
+  top:150rpx;
+  left: 230rpx;
+  font-size:30rpx;
+  color:#FF3B30;
+}
+.goodnum{
+  position: absolute;
+  top:145rpx;
+  right: 55rpx;
+  font-size:30rpx;
+  color:#000000;
+}
+.goodnuml{
+  position: absolute;
+  top:150rpx;
+  right: 90rpx;
+  font-size:30rpx;
+  color:#000000;
+}
+.goodnuma{
+  position: absolute;
+  top:148rpx;
+  right: 10rpx;
+  font-size:30rpx;
+  color:#000000;
+}
+.goodnumc{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align:text-top;
+}
+
+.recommend{
+  margin:50rpx 0 100rpx;
+  text-align: center;
+  overflow: auto;
+}
+.tip{
+    color:#000;
+    font-size:30rpx;
+    margin-bottom:30rpx;
+ }
+.tipEng{
+  font-size: 18rpx;
+  position: relative;
+}
+.leftline{
+  background: #000;
+  height: 3rpx;
+  width: 80rpx;
+  position:absolute;
+  top:15rpx;
+  left:160rpx;
+}
+.rightline{
+  background: #000;
+  height: 3rpx;
+  width: 80rpx;
+  position:absolute;
+  top:15rpx;
+  right:160rpx;
+}
+.goods{
+  width:342rpx;
+  height: 260rpx;
+  background: #E0E0E0;
+  margin: 20rpx 2rpx 10rpx 21rpx; 
+  float: left; 
+}
+
+
+.bottomview{
+  position: fixed;
+  bottom:0;
+  height: 100rpx;
+  width: 100%;
+}
+.paytip{
+  width:25%;
+  background: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size:30rpx;
+  display: inline-table;
+  text-align: right;
+}
+.paymoney{
+  width:50%;
+  background: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size:30rpx;
+  color:#FF3B30;
+  display: inline-table;
+  text-align: center;
+}
+.topay{
+  width: 25%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #D73F36;
+  font-size:30rpx;
+  text-align: center;
+  color: #fff;
+  display: inline-table;
+}

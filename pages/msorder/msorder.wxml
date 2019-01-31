@@ -1,0 +1,57 @@
+<!--pages/msorder/msorder.wxml-->
+<view class='presonmsg'>
+  <image class='msgimg' src='/pages/images/orderdw.png' style='width:30rpx;height:38rpx;'></image>
+  <view class='msgname'>联系人：李多喜</view>
+  <view class='msgphone'>13950503363</view>
+  <view class='msgadd'>维修地址：福建省厦门市湖里区望海路37号3028福建省厦门市湖里区望海路37号3028</view>
+  <view class='msgtip'>（请核对您的维修订单信息）</view>
+  <image class='msgenter' src='/pages/images/right02.png' style='width:12rpx;height:20rpx;'></image>
+  <image class='msgcaidai' src='/pages/images/caidai.png' style='width:100%;height:12rpx;'></image>
+</view>
+
+<view class='topline'></view>
+<view class='goodmsg'>
+    <image class='goodimg' style='  width: 160rpx;height: 160rpx;' src='/pages/images/dingwei.png'></image>
+    <view class='goodname'>内墙除醛漆专用腻子</view>
+    <view class='goodtype'>容量：1L 颜色：天蓝</view>
+       <view class='goodprice'>¥ 312</view>
+    <view class='goodnum'>x2</view>
+</view>
+<view class='line'></view>
+<view class='goodmsg'>
+    <image class='goodimg' style='  width: 160rpx;height: 160rpx;' src='/pages/images/dingwei.png'></image>
+    <view class='goodname'>内墙除醛漆专用腻子</view>
+    <view class='goodtype'>容量：1L 颜色：天蓝</view>
+       <view class='goodprice'>¥ 312</view>
+    <view class='goodnum'>x2</view>
+</view>
+
+<view class="weui-cell">
+    <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">取货方式</view>
+    </view>
+    <view class="weui-cell__ft">送货上门</view>
+</view>
+<view class='line'></view>
+<view class="weui-cell">
+    <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">订单合计</view>
+    </view>
+    <view class="weui-cell__ft" style='color:#333333;font-size:36rpx;'>¥312</view>
+</view>
+<view class='topline'></view>
+
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">现金支付</view>
+        <view class="weui-cell__ft">
+            <switch />
+        </view>
+    </view>
+</view>
+
+<view class='bottomview'>
+ <view class='paytip'>合计金额:</view>
+ <view class='paymoney'>￥0</view>
+ <view class='topay'>提交订单</view>
+</view>

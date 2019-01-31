@@ -1,0 +1,24 @@
+<!--pages/gooddetail/gooddetail.wxml-->
+<loading hidden="{{hidden}}">
+  加载中
+</loading>
+<swiper indicator-dots="{{indicatorDots}}" style='height:554rpx;' indicator-color='rgba(255,255,255, 0.5)' indicator-active-color='#ff5b2c'
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:100%;heigth:100%;'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='topline'></view>
+<view class='goodtype'>
+  <view></view>
+</view>
+<view class='goodsmg'>
+    <view class='goodname'>{{goodmsg.name}}</view>
+    <view class='goodprice'>¥{{goodmsg.unifieRetailPrice}}.00</view>
+    <view class='description'>{{goodmsg.description}}</view>
+</view>
+<view class='goodtype'>
+  <view></view>
+</view>

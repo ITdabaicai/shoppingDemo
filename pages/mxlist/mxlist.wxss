@@ -1,0 +1,24 @@
+/* pages/mxlist/mxlist.wxss */
+.niconpersonmsg{
+  width:55%;
+  position: relative;
+  top:-20rpx;
+}
+.niconpersonmsg{
+  font-size: 28rpx;
+}
+.time{
+  color:#999999;
+  font-size:24rpx;
+  position: absolute;
+  bottom:-40rpx; 
+}
+.money{
+  width:25%;
+  display: inline-table;
+  text-align: right;
+  color:#D73F36;
+}
+.niconpersonmsgenter{
+  width: 5%;
+}

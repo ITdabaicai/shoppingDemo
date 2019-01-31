@@ -1,0 +1,55 @@
+<!--pages/shoppingcart/shoppingcart.wxml-->
+<view class='page'>
+    <view class='noneadd' wx:if='{{isnull}}'>
+        <image src='/pages/images/shoppingcart.png' style='width:242rpx;height:240rpx;'></image>
+        <view class='noneaddtext'>当前购物车为空哦</view>
+    </view>
+
+
+    <block wx:else >
+         <view class="weui-cells weui-cells_after-title">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{checkboxItems}}" wx:key="value">
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">           
+              <image wx:if="{{!item.checked}}" src='/pages/images/dfaddc.png' class='goodcimg' ></image>
+              <image wx:if="{{item.checked}}" src='/pages/images/dfadd.png'  class='goodcimg'></image>
+              </view>
+              <view class="weui-cell__bd">
+                <view class='goodmsg'>
+                    <image class='goodimg' style='  width: 160rpx;height: 160rpx;' src='/pages/images/dingwei.png'></image>
+                    <view class='goodname'>内墙除醛漆专用腻子</view>
+                    <view class='goodtype'>容量：1L 颜色：天蓝</view>
+                      <view class='goodprice'>¥ 312</view>
+                    <view class='goodnuml'>
+                      <image class='goodnumc' src='/pages/images/goodl.png'></image>
+                    </view>
+                    <view class='goodnum'>1</view>
+                    <view class='goodnuma'>
+                      <image class='goodnumc' src='/pages/images/gooda.png'></image>
+                    </view>
+                </view>
+              </view>
+          </label>
+        </checkbox-group>
+        </view>
+    </block>
+   <!-- <view class='recommend'>
+        <view class='tip'>精选涂料</view>
+        <view class='tipEng'>
+         <view class='leftline'></view>
+             SELEXTED COATINGS
+         <view class='rightline'></view>  
+        </view>
+        <view wx:for='{{4}}' class='goods'></view> 
+   </view> -->
+
+   <view class='bottomview'>
+      <view class='paytip'>
+        <image src='/pages/images/dfaddc.png' style='width:44rpx;height:44rpx;  vertical-align: text-bottom;'></image>
+             全选    
+      </view>
+      <view class='paymoney'>总价:￥0</view>
+      <view class='topay' bindtap='login'>去结算</view>
+    </view>
+</view>

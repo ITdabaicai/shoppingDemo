@@ -1,0 +1,94 @@
+/* pages/myself/myself.wxss */
+/* top */
+.pages{
+  height: 100%;
+}
+.mymsg{
+  height: 240rpx;
+  position:relative;
+  background: #D73F36; 
+}
+.touxiang{
+  position: absolute;
+  top: 60rpx;
+  left: 40rpx;
+  width: 128rpx;
+  height: 128rpx;
+}
+.login{
+  position: absolute;
+  top: 95rpx;
+  left: 190rpx;
+  width: 180rpx;
+  height: 60rpx;
+  color:#fff;
+  font-size: 34rpx;
+}
+.name{
+  position: absolute;
+  top: 65rpx;
+  left: 190rpx;
+  width: 180rpx;
+  height: 60rpx;
+  color:#fff;
+  font-size: 34rpx;
+}
+.add{
+  position: absolute;
+  top: 135rpx;
+  left: 190rpx;
+  width: 120rpx;
+  height: 60rpx;
+  color:#fff;
+  font-size: 34rpx;
+}
+.myblock{
+  position: absolute;
+  top: 80rpx;
+  right: 0rpx;
+  width: 200rpx;
+  height: 100rpx;
+  z-index:555;
+}
+.myewm{
+  position: absolute;
+  top: 110rpx;
+  right: 80rpx;
+}
+.mymore{
+  position: absolute;
+  top: 104rpx;
+  right: 30rpx; 
+}
+
+.fivelead{
+  height: 148rpx;
+  width: 100%;
+  background: #fff;
+  padding-top:60rpx;
+  margin-bottom:15rpx;
+}
+.leadbox{
+  width: 20%;
+  text-align: center;
+  display: inline-table;
+  position: relative;
+}
+.leadword{
+  text-align: center;
+  color:#333333;
+  font-size:24rpx;
+}
+.weui-badge{
+  position: absolute;
+  top:-20rpx;
+  right:35rpx;
+  background:#fff;
+  color: #EE5720;
+  border: 1px solid #EE5720;
+}
+
+.weui-footer{
+  position: relative;
+  bottom:-100rpx;
+}

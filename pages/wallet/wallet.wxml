@@ -1,0 +1,18 @@
+<!--pages/wallet/wallet.wxml-->
+<view class='top'>
+  <view class='money'>¥0</view>
+  <view class='tipword'>当前积分可在交易时使用</view>
+</view>
+
+  <view wx:for='{{list}}' data-index='{{item.icon}}' class='personBh' bindtap="click">
+    <view class='personBhicon'>
+      <image src='/pages/images/{{item.icon}}.png'style='width:44rpx;height:44rpx;'></image>
+    </view>
+    <view class='personBhtext' >
+      {{item.title}}
+    </view> 
+    <view class='personBhenter'>
+      <image src='/pages/images/right02.png' style='width:18rpx;height:28rpx;'></image>
+    </view>
+    <view class='line'></view>
+  </view>

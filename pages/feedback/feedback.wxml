@@ -1,0 +1,30 @@
+<!--pages/feedback/feedback.wxml-->
+ <radio-group bindchange="radioChange">
+    <view class='personBh' wx:for='{{list}}' data-index='{{index}}'>
+      <label data-index='{{index}}' bindtap='getindex'>
+      <view class='niconpersonmsg'>{{item.name}}</view>
+      <view class='niconpersonmsgenter'>
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+          <image wx:if="{{item.checked}}" src='/pages/images/dfadd.png'style='width:44rpx;height:44rpx; vertical-align: middle;'></image>
+          <image wx:else src='/pages/images/dfaddn.png' style='width:44rpx;height:44rpx; vertical-align: middle;'></image>  
+      </view>
+      <view class='line'></view>
+       </label>
+    </view>
+</radio-group>
+<view class='tip'>
+  请补充详细问题和意见
+</view>
+
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+          <view class="weui-cell__bd">
+              <textarea class="weui-textarea" placeholder="请输入不少于10个字的描述"  placeholder-style='font-size:24rpx;'  style="height: 180rpx;font-size:28rpx;" />
+              <view class="weui-textarea-counter">0/240</view>
+          </view>
+      </view>
+  </view>
+
+  
+<button class='bottombtn' bindtap='addnew'>提交</button>
+

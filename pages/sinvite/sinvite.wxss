@@ -1,0 +1,72 @@
+/* pages/sinvite/sinvite.wxss */
+.first{
+  background-color: #ffffff;
+  height: 140rpx;
+  position: relative;
+  padding-top:40rpx; 
+}
+.touxiang{
+  position: absolute;
+  top:50rpx;
+  left: 30rpx;
+}
+.name{
+  position: absolute;
+  top:50rpx;
+  left: 150rpx;
+  color:#333333;
+  font-size:30rpx;
+}
+.num{
+  position: absolute;
+  top:110rpx;
+  left: 150rpx;
+  color:#333333;
+  font-size:26rpx;
+}
+.city{
+  position: absolute;
+  top:60rpx;
+  right: 40rpx;
+  color:#999999;
+  font-size:23rpx;
+}
+.date{
+  position: absolute;
+  top:110rpx;
+  right: 140rpx;
+  color:#999999;
+  font-size:22rpx;
+}
+.time{
+  position: absolute;
+  top:110rpx;
+  right: 40rpx;
+  color:#999999;
+  font-size:22rpx;
+}
+
+.line{
+  position: absolute;
+  top:0rpx;
+  left:30rpx;
+  height: 2rpx;
+  width: 92%;
+  background: #f2f2f2;
+  z-index: 1111111;
+}
+
+.nolesson{
+  position: absolute;
+  top:160rpx;
+  left: 50%;
+  margin-left:-130rpx;
+}
+.nolessontitle{
+  position: absolute;
+  top:460rpx;
+  width: 100%;
+  text-align: center;
+  color:#CCCCCC;
+  font-size:38rpx;
+}

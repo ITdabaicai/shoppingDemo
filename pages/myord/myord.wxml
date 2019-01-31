@@ -1,0 +1,53 @@
+<!--pages/myord/myord.wxml-->
+<view class='topline'></view>
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class='topline'></view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                  <view class='orderlist' wx:for='{{list}}'>
+                     <image class='orderimg' src='{{item.src}}'></image>
+                     <view class='ordertitle'>{{item.title}}</view>
+                     <view class='ordertype'>{{item.type}}</view>
+                     <view class='orderprice'>¥{{item.price}}</view>
+                     <view class='ordernum'>x{{item.num}}</view>
+                     <view class='orderstate'>{{item.state}}</view>
+                     <view class='orderall'>共{{item.allnum}}件商品 合计：¥{{item.allpay}}</view>
+                     <block wx:if="{{item.state==='待支付'}}">
+                      <view class='orderbtn'>取消</view>  
+                      <view class='orderbtn2'>去付款</view>    
+                     </block>
+                      <block wx:elif="{{item.state==='待发货'}}">
+                      <view class='orderbtn'>联系客服</view>  
+                      <view class='orderbtn2'>提醒发货</view>    
+                     </block>
+                      <block wx:elif="{{item.state==='待验收'}}">
+                      <view class='orderbtn'>联系客服</view>  
+                      <view class='orderbtn2'>确认收货</view>    
+                     </block>
+                      <block wx:else>
+                      <view class='orderbtn'>退货/售后</view>  
+                      <view class='orderbtn2'>评价</view>    
+                     </block>
+                  </view>
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 3}}">选项四的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 4}}">选项五的内容</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+

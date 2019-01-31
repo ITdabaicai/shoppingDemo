@@ -1,0 +1,25 @@
+单页链接
+
+index -首页
+myself -我的 
+wallet -钱包
+mxlist -明细列表
+mxdetail -明细详情
+myord - 我的订单
+order - 订单详情
+msorder - 确定订单
+ewm -二维码
+personmsg - 个人信息
+add - 收货地址
+addnew -新增地址
+sinvite -邀请列表
+feedback -服务反馈
+discuss - 发表评论
+shoppingcart -购物车
+verifyphone -验证手机
+phone -绑定手机
+changephone -更换手机
+email - 绑定邮箱
+references -介绍人
+verifybankcard - 实名认证 银行卡信息
+verifyperson -实名认证 个人信息

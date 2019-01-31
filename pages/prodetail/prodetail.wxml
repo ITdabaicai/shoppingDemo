@@ -1,0 +1,58 @@
+<!--pages/prodetail/prodetail.wxml-->
+<loading hidden="{{hidden}}">
+  加载中
+</loading>
+
+  <swiper  indicator-dots="{{indicatorDots}}"  style='min-height:480rpx; '
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item wx:for="{{imgUrls}}" style='position: relative;display:flex;justify-content: center;'>
+          <image src="{{item}}" data-url='{{item}}' bindtap="imgYu"  mode='aspectFit'></image> 
+      </swiper-item>
+  </swiper>
+   <view class='topimgmst'>{{promsg.name}}</view>
+<view class='proco'>
+  产品参数
+</view>
+<view class='prodemsg'>
+    <view class='detail'>
+        <view class='left'>品牌</view>
+        <view class='right'>{{promsg.brand}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>口径</view>
+        <view class='right'>{{promsg.caliber}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>型号</view>
+        <view class='right'>{{promsg.model}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>流量</view>
+        <view class='right'>{{promsg.flow}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>介质</view>
+        <view class='right'>{{promsg.medium}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>扬程</view>
+        <view class='right'>{{promsg.lift}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>功率</view>
+        <view class='right'>{{promsg.power}}</view>
+    </view>
+     <view class='detail'>
+        <view class='left'>材质</view>
+        <view class='right'>{{promsg.material}}</view>
+    </view>
+</view>
+
+<view class='proco'>
+  产品概述
+</view>
+<view class='gaisu'>
+  <text>
+    {{promsg.summary}}
+  </text >
+</view>

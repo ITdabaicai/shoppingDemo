@@ -1,0 +1,8 @@
+/* pages/addnew/addnew.wxss */
+.bk{
+  background: #fff;
+
+}
+.weui-label{
+  font-size:34rpx;
+}

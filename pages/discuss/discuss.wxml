@@ -1,0 +1,22 @@
+<!--pages/discuss/discuss.wxml-->
+<view class='top'>
+    <image src='/pages/images/star01.png' style='width:60rpx;height:60rpx;padding:10rpx 30rpx 0;'></image>
+    <view class='toptext'>描述相符</view>
+    <view class='straview' wx:for='{{list}}'  wx:key="value">
+      <image wx:if='{{!item.checked}}' data-index="{{item.value}}"  bindtap="star" src='/pages/images/star01.png' style='width:36rpx;height:34rpx;margin:0 5rpx;'></image>
+        <image wx:else src='/pages/images/star02.png' data-index="{{item.value}}" bindtap="star" style='width:36rpx;height:34rpx;margin:0 5rpx;'></image>
+    </view>
+    <view class='result'>{{result}}</view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+        <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
+            <view class="weui-textarea-counter">0/240</view>
+        </view>
+    </view>
+</view>
+
+  
+<button class='bottombtn' bindtap='addnew'>发布</button>
+

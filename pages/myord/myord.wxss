@@ -1,0 +1,112 @@
+/* pages/myord/myord.wxss */
+.topline{
+  height: 4rpx;
+}
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-navbar{
+  background: #fff;
+}
+.weui-navbar__item.weui-bar__item_on{
+  color:#D73F36;
+}
+.weui-navbar__slider{
+  width:2.5em;
+  background-color:#D73F36;
+}
+.weui-tab__panel{
+  padding-top:0;
+}
+.weui-tab__content {
+  text-align: left;
+}
+.orderlist{
+  position: relative;
+  height: 314rpx;
+  background: #fff;
+}
+.orderimg{
+  position: absolute;
+  top:40rpx;
+  left:40rpx;
+  width:160rpx;
+  height:160rpx;
+}
+.ordertitle{
+  position: absolute;
+  top: 60rpx;
+  left:220rpx;
+  color:#000000;
+  font-size:24rpx;
+}
+.ordertype{
+  position: absolute;
+  top: 120rpx;
+  left:220rpx;
+  color:#999999;
+  font-size:22rpx;
+}
+.orderprice{
+  position: absolute;
+  top: 50rpx;
+  right:50rpx;
+  color:#000000;
+  font-size:24rpx;
+}
+.ordernum{
+  position: absolute;
+  top: 80rpx;
+  right:50rpx;
+  color:#999999;
+  font-size:24rpx;
+}
+.orderstate{
+  position: absolute;
+  top: 160rpx;
+  right:50rpx;
+  color:#F5A623;
+  font-size:24rpx;
+}
+.orderall{
+  position: absolute;
+  top: 200rpx;
+  right:50rpx;
+  color:#000000;
+  font-size:24rpx;
+}
+.orderbtn{
+  position: absolute;
+  bottom: 20rpx;
+  right:220rpx;
+  color:#979797;
+  font-size:24rpx;
+  border: 1px solid #979797;
+  width: 152rpx;
+  height: 44rpx;
+   line-height: 44rpx;
+  text-align: center;
+  border-radius: 76rpx;
+}
+.orderbtn2{
+  position: absolute;
+  bottom: 20rpx;
+  right:40rpx;
+  color:#D73F36;
+  font-size:24rpx;
+  border: 1px solid #D73F36;
+  width: 152rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  border-radius: 76rpx;
+}

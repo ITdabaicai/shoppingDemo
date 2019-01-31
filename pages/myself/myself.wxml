@@ -1,0 +1,82 @@
+<!--pages/myself/myself.wxml-->
+
+
+<loading hidden="{{hidden}}">
+  加载中
+</loading>
+<!-- top -->
+  <view class='mymsg'>
+    <view class='touxiang'>
+      <image wx:if='{{token==0}}' src='/pages/images/default_head.png' style='width:128rpx;height:128rpx;'></image>
+      <image wx:else src='{{avatarUrl}}' style='width:128rpx;height:128rpx;'></image>
+    </view>
+
+    <block wx:if='{{token==0}}'>
+       <label>
+      <view class='login'> 登录/注册
+           <button open-type="getUserInfo" hover-class='none' bindgetuserinfo="getUserInfoFun"></button>
+      </view>
+         </label>
+    </block>
+     <block  wx:else>
+    <view class='name'>
+       {{name}}
+    </view>
+    <view  wx:if='{{hasget!=0}}' class='add'>
+          {{add}}
+    </view>
+      <view class='myblock' bindtap='goewm'></view>
+      <view class='myewm'>
+        <image wx:if='{{hasget!=0}}' src="/pages/images/mine_Qr_code.png" style='width:36rpx;height:36rpx'></image>
+      </view>
+      <view class='mymore'>
+        <image src="/pages/images/list_more_white.png" style='width:12rpx;height:24rpx'></image>
+      </view>
+      </block>
+  </view>
+   
+  <!-- tab -->
+
+  <view class='fivelead' >
+    <view class='leadbox'>
+      <image src='/pages/images/dingdan.png' style='width:34rpx;height:44rpx'></image>
+      <view class='leadword'>全部订单</view>
+    </view>
+     <view class='leadbox'>
+      <image src='/pages/images/daizhifu.png' style='width:44rpx;height:48rpx'></image>
+        <view class="weui-badge">8</view>
+      <view class='leadword'>待支付</view>
+    </view>
+     <view class='leadbox'>
+      <image src='/pages/images/daifahuo.png' style='width:44rpx;height:46rpx'></image>
+        <view class="weui-badge">8</view>
+      <view class='leadword'>待发货</view>
+    </view>
+     <view class='leadbox'>
+     <image src='/pages/images/daiyanshou.png' style='width:44rpx;height:34rpx'></image>
+       <view class="weui-badge">8</view>
+      <view class='leadword'>待验收</view>
+    </view>
+     <view class='leadbox'>
+        <image src='/pages/images/shouhou.png' style='width:44rpx;height:44rpx;'></image>
+        <view class="weui-badge">8</view>
+        <view class='leadword'>退款/售后</view>
+    </view>
+  </view>
+
+  <view wx:for='{{liexiang}}' data-index='{{item.icon}}' class='personBh' bindtap="click">
+    <view class='personBhicon'>
+      <image src='/pages/images/{{item.icon}}.png'style='width:44rpx;height:44rpx;'></image>
+    </view>
+    <view class='personBhtext' >
+      {{item.title}}
+    </view> 
+    <view class='personBhenter'>
+      <image src='/pages/images/right02.png' style='width:18rpx;height:28rpx;'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+
+  <view class="weui-footer">
+      <view class="weui-footer__text">当前版本 1.1.0</view>
+  </view>

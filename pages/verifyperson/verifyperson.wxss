@@ -1,0 +1,48 @@
+/* pages/verifyperson/verifyperson.wxss */
+.toptip{
+  color:#BCBCBC;
+  font-size:22rpx;
+  padding-left:40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.weui-vcode-btn{
+  color:#D73F36;
+}
+.idcard{
+    position: relative;
+    overflow: auto;
+}
+.idcardf,.idcardb{
+  height: 264rpx;
+  width: 326rpx;
+}
+.idcardf{
+  margin:0 22rpx 0 38rpx;
+}
+.idcardtip{
+ height: 80rpx;
+ width: 124rpx;
+ margin:0 20rpx 0 38rpx;
+}
+.tipwordview{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.wordtip{
+  width:22rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+.tipword{
+  font-size:28rpx;
+  display: inline;
+}
+.next{
+  margin: 40rpx;
+  background: #D73F36;
+  color:#fff;
+  width: 92%;
+  font-size:34rpx;
+}

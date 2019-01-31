@@ -1,0 +1,58 @@
+<!--pages/order/order.wxml-->
+<view class='orderstate'>{{orderstate}}</view>
+<view class='orderfollow'>
+    <image class='orderimg' style='  width: 44rpx;height: 42rpx;' src='/pages/images/wuliu.png'></image>
+    <view class='state'>已下单</view>
+    <view class='ordertime'>2018-11-11 18:11:11 </view>
+</view>
+<view class='orderfollow'>
+    <image class='orderimg' style='  width: 30rpx;height: 38rpx;' src='/pages/images/dingwei.png'></image>
+    <view class='orderget'>收货人:123</view>
+    <view class='ordernum'>13912343364</view>
+    <view class='orderadd'>福建省厦门市湖里区软件园2期37</view>
+</view>
+
+<view class='goodmsg'>
+    <image class='goodimg' style='  width: 160rpx;height: 160rpx;' src='/pages/images/dingwei.png'></image>
+    <view class='goodname'>内墙除醛漆专用腻子</view>
+    <view class='goodtype'>容量：1L 颜色：天蓝</view>
+    <view class='goodnum'>数量x2</view>
+    <view class='goodprice'>¥ 312</view>
+</view>
+
+<view class='topline'></view>
+<view class='paymsg'>
+  <view class='payleft'>物流运费</view>
+  <view class='payright'>¥20</view>
+</view>
+<view class='paymsg'>
+  <view class='payleft'>优惠</view>
+  <view class='payright'>-¥20</view>
+</view>
+<view class='paymsg'>
+  <view class='payleft'>支付方式</view>
+  <view class='payright'>微信支付</view>
+</view>
+<view class='paymsg'>
+  <view class='payleft'>合计支付</view>
+  <view class='payprice'>¥ 627</view>
+</view>
+
+<view class='topline'></view>
+<view class="weui-form-preview">
+  <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">订单编号</view>
+          <view class="weui-form-preview__value">112345677</view>
+      </view>
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">创建时间</view>
+          <view class="weui-form-preview__value">2018-11-10 18:11:11 </view>
+      </view>
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">交易编号</view>
+          <view class="weui-form-preview__value">20181110181111</view>
+      </view>
+  </view>
+</view>
+<button class='bottombtn' bindtap='addnew'>提交</button>

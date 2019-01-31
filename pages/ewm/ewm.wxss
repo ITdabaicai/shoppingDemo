@@ -1,0 +1,72 @@
+/* pages/ewm/ewm.wxss */
+page{
+   background: #D73F36;
+}
+.bigview{
+   position: relative;
+}
+.ewmview{
+  position: absolute;
+  top: 150rpx;
+  left:85rpx;
+  background: #fff;
+  width: 580rpx;
+  height:800rpx;
+}
+.ewmimg{
+  position: absolute;
+  top: -60rpx;
+  left:230rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+    border: 1px solid #666666;
+
+}
+.ewmimg image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+}
+.ewmname{
+  position: absolute;
+  top: 75rpx;
+  left:215rpx;
+  width: 150rpx;
+  height: 40rpx;
+  border: 1px solid #666666;
+}
+.ewmadd{
+  position: absolute;
+  top: 145rpx;
+  left:215rpx;
+  width: 150rpx;
+  height: 40rpx;
+  border: 1px solid #666666;
+}
+.ewm{
+  background: gray;
+  position: absolute;
+  top: 220rpx;
+  left:112rpx;
+  width: 356rpx;
+  height: 356rpx;
+}
+.ewmkeepimg{
+  position: absolute;
+  bottom: 100rpx;
+  left:40rpx;
+  width: 500rpx;
+  text-align: center;
+  color:#3687f0;
+  font-size: 24rpx;
+}
+.ewmtext{
+  position: absolute;
+  bottom: 40rpx;
+  left:40rpx;
+  width: 500rpx;
+  text-align: center;
+  color:#666666;
+  font-size: 24rpx;
+}

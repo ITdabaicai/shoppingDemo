@@ -1,0 +1,35 @@
+<!--pages/add/add.wxml-->
+ <view class='noneadd' wx:if='{{add==0}}'>
+    <image src='/pages/images/nulladd.png' style='width:242rpx;height:240rpx;'></image>
+    <view class='noneaddtext'>当前收货地址为空哦</view>
+    <button class='noneaddbtn' bindtap='addnew'>点我添加</button>
+ </view>
+ <view wx:else>
+     <view class='topline'></view>
+    <radio-group bindchange="radioChange">
+          <view class='addlist' wx:for='{{list}}' data-index='{{index}}'>
+            <view class='addname'>{{item.name}}</view>
+            <view class='addtel'>{{item.tel}}</view>
+            <view class='adddetail'>{{item.add}}</view>
+            <view class='caozuo'>
+              <label data-index='{{index}}' bindtap='getindex'>
+               <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                <image wx:if="{{item.checked}}" src='/pages/images/dfadd.png'style='width:44rpx;height:44rpx; vertical-align: middle;'></image>
+                <image wx:else src='/pages/images/dfaddn.png' style='width:44rpx;height:44rpx; vertical-align: middle;'></image>
+              <view class='def'>默认地址</view>
+              </label>
+              <view class='addedit'>编辑</view>
+              <view class='adddel'>删除</view>
+            </view>
+          </view>
+      </radio-group>
+
+
+
+     <button class='Yaddbtn' bindtap='addnew'>添加新的地址</button>
+
+
+
+
+
+ </view>

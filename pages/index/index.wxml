@@ -1,0 +1,47 @@
+<!--pages/product/product.wxml-->
+<loading hidden="{{hidden}}">
+  加载中
+</loading>
+<view class='top'>
+  <view class='left'>
+      <image src='../images/indexdw.png' style='width:24rpx;height:30rpx; vertical-align: middle'></image>
+      厦门湖里万达店
+  </view>
+  <view class='right'>   
+  <view class='searchimg'>
+  <image src='../images/search.png' style='width:35rpx;height:35rpx;'></image>
+  </view>
+   <input bindinput='watchPassWord' class='search' type="text"  placeholder="产品搜索"  placeholder-style='font-size:30rpx;padding-left:60rpx;text-align:left;'> </input>
+  </view>
+</view>
+<view class='lunbo'>
+      <swiper indicator-dots="{{indicatorDots}}" style='margin-left:10%;width:80%;height:254rpx;' indicator-color='rgba(255,255,255, 0.5)' indicator-active-color='#D73F36'
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style='width:100%;heigth:100%;'/>
+        </swiper-item>
+      </block>
+    </swiper>
+
+</view>
+<view class='leftswipt'>
+  <block  wx:for='{{leftdata}}'>
+   <view data-index='{{index}}' class='{{leftindex==index?"proitem":"proitemk"}}' data-id='{{item.id}}' bindtap='changeindex'>
+   {{item.series}}
+   </view>
+   </block>
+</view>
+<view class='rightswipt'>
+    <block  wx:for='{{rightdata}}'>
+  <label data-id='{{item.id}}' bindtap='prodetail'>
+   <view class='productindex' >
+    <view class='proimg'>
+      <image src='{{item.avatar}}' style='width:120rpx;height:120rpx;'></image>
+    </view>
+    <view class='proname'>{{item.name}}</view>
+    <view class='promodel'>月销：{{item.model }}</view>
+   </view>
+   </label>
+   </block>
+</view>

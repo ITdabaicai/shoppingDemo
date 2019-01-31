@@ -1,0 +1,59 @@
+/**app.wxss**/
+@import 'weui.wxss';
+page{
+  position: relative;
+  background-color: #F5F5F5;
+}
+
+.line{
+  position: relative;
+  bottom:0rpx;
+  left:30rpx;
+  height: 2rpx;
+  width: 92%;
+  background: #f2f2f2;
+}
+.topline{
+  height: 20rpx;
+  width:100%;
+}
+.bottombtn{
+  background: #D73F36;
+  color:#fff;
+  position: relative;
+  top:150rpx;
+  width: 92%;
+  font-size:34rpx;
+}
+
+
+.personBh{
+  background: #fff;
+  height: 104rpx;
+  line-height: 104rpx;
+}
+.personBhicon,.personBhenter{
+  width: 20%;
+  display: inline-table;
+  vertical-align: middle;
+  text-align: center;
+}
+.personBhtext{
+  width:60%;
+  display: inline-table;
+  font-size:34rpx;
+  color:#333333;
+}
+.niconpersonmsgenter{
+  width: 20%;
+  display: inline-table;
+  vertical-align: middle;
+  text-align: right;
+}
+.niconpersonmsg{
+  padding-left:5%;
+  width:70%;
+  display: inline-table;
+  font-size:34rpx;
+  color:#333333;
+}

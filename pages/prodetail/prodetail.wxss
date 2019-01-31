@@ -1,0 +1,63 @@
+/* pages/prodetail/prodetail.wxss */
+.topimg{
+  position: relative;
+  display:flex;                  
+  justify-content: center;   
+}
+.topimgmst{
+  width: 100%;
+  height: 48rpx;
+  fort-size:48rpx;
+  color:#ffffff;
+  background: #ffffff;
+  position: absolute;
+  top: 440rpx;
+  text-align: center;
+  background: rgba(0,0,0,.7)
+}
+.proco{
+    background: #ffffff;
+    font-size:32rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 40rpx;
+    border-bottom:#f2f2f2 solid 2rpx;
+}
+.prodemsg{
+  background: #ffffff;
+  height: 400rpx;
+  margin-bottom:10rpx;
+}
+.detail{
+  width: 50%;
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.left{
+  width: 30%;
+  float: left;
+  text-align: right;
+  color:#CCCCCC;
+  font-size:24rpx;
+}
+.right{
+  width: 70%;
+  float: left;
+  text-align: center;
+  color:#333333;
+  font-size:24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+}
+.gaisu{
+padding:0 20rpx 20rpx 20rpx;
+text-indent: 30rpx;
+background: #ffffff;
+font-size:24rpx;
+font-family:STSongti-SC-Light;
+font-weight:bold;
+color:rgba(179,177,177,1);
+line-height:48rpx;
+}
